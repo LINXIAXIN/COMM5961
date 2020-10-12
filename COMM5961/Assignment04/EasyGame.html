@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head><title>Easy Game</title></head>
+<html lang="en" dir="ltr">
 
+  <script type="text/javascript">
+    function add(a,b){
+      var a = parseInt(a);
+      var b = parseInt(b);
+      var c = a+b;
+      return c;
+    }
 
-<body>
-
-
-    <P>Input to Verify your Diary password</P>
-                <form>
-                    <label>
-                         Your Diary Name：
-                    </label>
-                        <input type='text' name='username'>
-                    <div class='form-group'> 
-                    <label>
-                        Password:
-                    </label>
-                        <input type='password' name='pwd'>
-                    </div>
-
-                    <button id='submitBtn' type='submit'>Log in</button>
-                </form>
-
-
-
-                <script>
-                    function sayHello() {
-                     var username = document.forms[0].username.value;
-                     var password = document.forms[0].pwd.value;
-                     alert("Oh Dear" + username + "! Your verified Diary Password is " + password + '.');
-                    }
-                    document.getElementById('submitBtn').addEventListener('click', sayHello);
-                </script>
-
-
-</body>
+    function getValues(){
+      var a = prompt("X");
+      var b = prompt("Y");
+      var z = add(a,b);
+      alert("the answer is : " + z);
+    }
+  </script>
+  <body>
+    <p>Click to find X+Y=?</p>
+    <button onclick="getValues();">click!</button>
+  </body>
 </html>
-
