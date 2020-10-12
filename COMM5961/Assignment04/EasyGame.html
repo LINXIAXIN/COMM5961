@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>Easy Game</title></head>
+
+
+<body>
+
+
+    <P>Input to Verify your Diary password</P>
+                <form>
+                    <label>
+                         Your Diary Name：
+                    </label>
+                        <input type='text' name='username'>
+                    <div class='form-group'> 
+                    <label>
+                        Password:
+                    </label>
+                        <input type='password' name='pwd'>
+                    </div>
+
+                    <button id='submitBtn' type='submit'>Log in</button>
+                </form>
+
+
+
+                <script>
+                    function sayHello() {
+                     var username = document.forms[0].username.value;
+                     var password = document.forms[0].pwd.value;
+                     alert("Oh Dear" + username + "! Your verified Diary Password is " + password + '.');
+                    }
+                    document.getElementById('submitBtn').addEventListener('click', sayHello);
+                </script>
+
+
+</body>
+</html>
+
