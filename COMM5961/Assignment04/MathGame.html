@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html> <lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignent04</title>
+
+ <script src="01.js"></script>
+ <script>
+      var username = prompt('Please enter your name')
+      var year = prompt('Please enter your year of birth')
+      var age = 2020 - year
+      alert(username + ', wow you are ' + age + ' years old.')
+      prompt(username + ', please enter your favorate color') 
+      alert(username + ', you are handsome😍! Start now!')
+ </script>
+
+
+<style type="text/css">
+
+    body{
+        font: 16px/28px 'Microsoft YaHei'  
+  
+    }
+
+    h1{
+        font-weight: 400;
+        text-align: center;
+    }
+
+
+
+    p {
+        color :green    
+        
+      }
+    
+    div {
+        text-align:center;
+        border:2px solid #a1a1a1;
+        padding:10px 40px; 
+        background:#dddddd;
+        width:350px;
+        border-radius:25px;
+        -moz-border-radius:25px; 
+        -moz-box-shadow: 10px 10px 5px #888888;
+        box-shadow: 10px 10px 5px #888888;
+        }
+    
+
+    
+     .btnColor{
+        width:auto;
+        height:30px;
+        background-color:aquamarine;
+       }
+
+    .center {
+        text-align: center;
+    }
+
+
+    
+</style>
+
+</head>
+
+
+<body>
+    <h1>A Simple Game for you</h1>
+    <img src="https://s1.ax1x.com/2020/10/14/05KRdU.jpg">
+    <br>
+
+    <button type="button" class="btnColor" onclick="changeColor();">Change Text Color of Hello Message</button>
+    <button type="button" class="btnColor" onclick="sumxyz();">X+ Y + Z = ?</button>
+    
+    <br><br>
+    
+
+    <form>
+    
+        <div>
+          <label for="1st">Enter first number:</label>
+          <input type="text" id='1st_num'>
+        </div>
+        <div>
+          <label for="2nd">Enter second number:</label>
+          <input type="text" id='2nd_num'>
+        </div>
+       
+        <div>
+          <label for="3nd">Enter second number:</label>
+          <input type="text" id='3nd_num'>
+        </div>
+      
+
+      <p id="final">Your click final will be show here.</p>
+      <p id="Hello">Hello, click the button above to change color.</p> 
+        
+
+      <br>
+    </form>
+    <button type="button" class="btnColor" onclick="drive();"> In China,You can attend a driving school to learn driving, but you must be over 18. Click to book an examClick to calculate! 🚗</button>
+    <br><br>
+      <form>
+      <div>
+          <label for="1st">Enter your age</label>
+          <input type="text" id='yourAge'>
+      </div>
+    </form>
+
+      
+    <br>
+   <input type="button" value="Finish the game" onclick="alert('Try again!')"/>
+</body>
+</html>
