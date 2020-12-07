@@ -427,7 +427,7 @@ header#top nav ul li a.nav-cta {
 	height: 530px;
 	margin: 0 auto;
 	margin-top: 20px;
-	background-color: rgb(255, 255, 255);
+	background-color:#fff;
 	margin-bottom: 20px;
 	padding-top: 20px;
 	margin-left: -20%;
@@ -1139,4 +1139,8 @@ footer a.social.google {
 /* anniuxiugai */
 button#btn {
 	width: 328.39px;
+}
+
+body {
+	background-color: #fff;
 }
