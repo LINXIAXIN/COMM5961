@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Assignment05</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrap">
+        <div class="container">
+            <div class="logo text-center">
+                <span class="fa">☕️</span>
+                <h1>香港取景的电影</h1>
+                <p class="sub-tittle text-white mt-2">This website collects Hot Movies who contain some famous scenes shot in HK</p>
+            </div>
+        </div>
+
+        <div class="container bigbox">
+            <select id="target" onchange="changeValue(value)">
+				<option value=selected>请选择</option>
+				<option value="1">Time</option>
+				<option value="2">Genre</option>
+				<option value="3">Location</option>
+			</select>
+
+
+            <p id="demo"></p>
+
+            <div id="origin">
+                <iframe class="airtable-embed" src="https://airtable.com/embed/shr7ECrbB1NpZKCZF?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+
+<script>
+    function changeValue(e) {
+
+        document.getElementById("origin").style.display = "none"
+        if (e == '1') {
+
+            document.getElementById("demo").innerHTML = '<iframe class="airtable-embed" src="https://airtable.com/embed/shrJsm69wiWjfij8g?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
+        } else if (e == '2') {
+            document.getElementById("demo").innerHTML = '<iframe class="airtable-embed" src="https://airtable.com/embed/shr5uFBhhehLoHr6n?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
+        } else if (e == '3') {
+            document.getElementById("demo").innerHTML = '<iframe class="airtable-embed" src="https://airtable.com/embed/shrjIsrowelMWE5Ao?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>';
+        }
+    }
+</script>
+
+
+</html>
